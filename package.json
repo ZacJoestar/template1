@@ -1,0 +1,36 @@
+{
+  "name": "template-1",
+  "version": "1.0.0",
+  "description": "Template flexible de base",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZacJoestar/template1.git"
+  },
+  "keywords": [
+    "Wordpress",
+    "ACF",
+    "Bootstrap",
+    "Gulp",
+    "Npm"
+  ],
+  "author": "Clément Hmich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZacJoestar/template1/issues"
+  },
+  "homepage": "https://github.com/ZacJoestar/template1#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.7",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-jshint": "^2.1.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.1",
+    "jshint": "^2.9.6"
+  }
+}
