@@ -1,0 +1,26 @@
+.strate-presentation {
+  padding: 100px 0;
+}
+
+.round-img-wrapper{
+  width: 250px;
+  height: 250px;
+  border-radius: 200px;
+  overflow: hidden;
+  margin: auto;
+  margin-bottom: 20px;
+  &--icon{
+    padding-top: 70px;
+  }
+}
+
+.presentation-wrapper-imgs{
+  padding: 100px 0;
+}
+
+.caption{
+  font-family: $clicker;
+  color: $pink;
+  font-size: 34px;
+  text-transform: capitalize;
+}

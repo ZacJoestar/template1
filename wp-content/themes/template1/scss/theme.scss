@@ -1,0 +1,26 @@
+// BOOTSTRAP
+@import "../../../../node_modules/bootstrap/scss/bootstrap";
+
+// GLOBAL
+@import "global/reset";
+@import "global/variables";
+
+// ELEMENTS
+@import "utilities";
+@import "helpers";
+
+// PLUGINS
+@import "plugins/contact-form";
+
+// STYLING
+@import "theming";
+
+// UI
+@import "ui/buttons";
+
+// STRATES
+@import "strates/header";
+@import "strates/presentation";
+@import "strates/countdown";
+@import "strates/ceremonie";
+
