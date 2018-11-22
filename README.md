@@ -5,4 +5,4 @@ Template Wordpress
 Bootstrap, Gulp, Advanced Custom Fields
 
 # Commands
-Default task : `gulp`. Execute `lint, sass, scripts, watch, browsersync
+Default task : `gulp`. Executes `lint, sass, scripts, watch, browsersync
