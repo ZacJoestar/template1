@@ -8,7 +8,10 @@ Template Wordpress
 - SASS
 
 # Commands
-Default task: 
-`gulp` 
+Default task:
+
+`gulp`
+
 Executes: 
+
 `lint, sass, scripts, watch, browsersync`
