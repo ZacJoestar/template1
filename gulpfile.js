@@ -2,17 +2,26 @@
 var gulp = require('gulp');
 
 // Include Our Plugins
-var jshint = require('gulp-jshint');
-var sass   = require('gulp-sass');
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
-var rename = require('gulp-rename');
-var cssmin = require('gulp-cssmin');
+var jshint      = require('gulp-jshint');
+var sass        = require('gulp-sass');
+var concat      = require('gulp-concat');
+var uglify      = require('gulp-uglify');
+var rename      = require('gulp-rename');
+var cssmin      = require('gulp-cssmin');
+var browserSync = require('browser-sync').create();
 
 // Paths
 var globalPath  = 'wp-content/themes/template1/';
 var cssPath     = 'wp-content/themes/template1/scss/**/*.scss';
 var jsPath      = 'wp-content/themes/template1/js/**/*.js';
+
+gulp.task('bs', ['sass'], function() {
+    browserSync.init({
+        proxy: "localhost:8888/template1"
+    });
+
+    gulp.watch(globalPath + "**/*.php").on('change', browserSync.reload);
+});
 
 // Lint Task
 gulp.task('lint', function() {
@@ -20,6 +29,7 @@ gulp.task('lint', function() {
         .pipe(jshint())
         .pipe(jshint.reporter('default'));
 });
+
 
 // Compile Our Sass
 gulp.task('sass', function() {
@@ -31,7 +41,8 @@ gulp.task('sass', function() {
                 this.emit('end');
             })
         )
-        .pipe(gulp.dest(globalPath + 'dist/css'));
+        .pipe(gulp.dest(globalPath + 'dist/css'))
+        .pipe(browserSync.stream());
 });
 
 // Concatenate & Minify JS
@@ -51,4 +62,4 @@ gulp.task('watch', function() {
 });
 
 // Default Task
-gulp.task('default', ['lint', 'sass', 'scripts', 'watch']);
+gulp.task('default', ['lint', 'sass', 'scripts', 'watch', 'bs']);

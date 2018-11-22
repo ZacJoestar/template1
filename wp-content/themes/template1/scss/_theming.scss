@@ -17,7 +17,7 @@ a{
 }
 
 // FONTS
-h1,
+h1,h2,
 .strate-title{
   font-family: $clicker;
   font-size: 70px;
@@ -27,6 +27,9 @@ h1,
 .strate-title{
   color: $pink;
   margin-bottom: 20px;
+  &--white{
+    color: white;
+  }
 }
 
 .paragraph {
@@ -34,12 +37,18 @@ h1,
   font-size: 18px;
   margin-bottom: 20px;
   line-height: 32px;
-}
 
-.paragraph--fancy{
-  @extend .paragraph;
-  font-family: $clicker;
-  font-size: 30px;
+  &--fancy{
+    font-family: $clicker;
+    font-size: 30px;
+  }
+
+  &--fancy-white{
+    color: white;
+    font-family: $clicker;
+    font-size: 30px;
+  }
+
 }
 
 .highlight{

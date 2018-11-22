@@ -1,0 +1,13 @@
+.strate-formulaire{
+  position: relative;
+
+  &__inner{
+    position: relative;
+    z-index: 10;
+  }
+
+  &__form-wrapper{
+    margin-top: 50px;
+  }
+
+}
