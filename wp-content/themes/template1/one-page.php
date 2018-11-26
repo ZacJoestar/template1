@@ -24,6 +24,7 @@ get_header();
 	    <?php endwhile; ?>
 	    <?php get_template_part('strates/ceremonie'); ?>
 	    <?php get_template_part('strates/formulaire'); ?>
+	    <?php get_template_part('strates/commentaires'); ?>
     <?php endwhile; ?>
 </div>
 

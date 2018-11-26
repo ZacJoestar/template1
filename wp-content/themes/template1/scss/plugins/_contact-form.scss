@@ -38,4 +38,20 @@
     }
   }
 
+  .wpcf7-response-output{
+    border: 0;
+    background-color: rgba(255,255,255,.6);
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    text-transform: uppercase;
+
+    &.wpcf7-mail-sent-ok{
+      color: white;
+    }
+
+  }
+
 }

@@ -1,6 +1,10 @@
 .strate-formulaire{
   position: relative;
 
+  .jumbotron{
+    margin-bottom: 0;
+  }
+
   &__inner{
     position: relative;
     z-index: 10;
