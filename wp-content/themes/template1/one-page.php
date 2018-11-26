@@ -11,7 +11,7 @@ get_header();
 
 ?>
 
-<div class="container-fluid">
+<div class="site-wrapper">
     <?php while(have_posts()) : the_post() ?>
         <?php while(have_rows('header') ) : the_row()  ?>
             <?php get_template_part('strates/header'); ?>
